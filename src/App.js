@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Header from "./shared/Header";
 import "./App.css";
-import RentalCard from "./components/RentalCard";
+
+import RentalList from "./components/rental/RentalList";
 
 class App extends Component {
   render() {
@@ -10,14 +11,7 @@ class App extends Component {
         <Header />
 
         <div className="container">
-          <section id="rentalListing">
-            <h1 className="page-title">Your Home All Around the World</h1>
-            <div className="row">
-              <RentalCard />
-              <RentalCard />
-              <RentalCard />
-            </div>
-          </section>
+          <RentalList />
         </div>
       </div>
     );
